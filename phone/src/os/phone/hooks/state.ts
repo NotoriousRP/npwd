@@ -1,10 +1,11 @@
 import { atom } from 'recoil';
 import { ResourceConfig } from '@typings/config';
+import { isEnvBrowser } from '@utils/misc';
 
 export const phoneState = {
   visibility: atom<boolean>({
     key: 'phoneVisibility',
-    default: false,
+    default: isEnvBrowser(),
   }),
   resourceConfig: atom<ResourceConfig>({
     key: 'resourceConfig',

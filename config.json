@@ -16,8 +16,8 @@
   },
   "database": {
     "useIdentifierPrefix": false,
-    "playerTable": "users",
-    "identifierColumn": "identifier",
+    "playerTable": "characters",
+    "identifierColumn": "charid",
     "identifierType": "license",
     "profileQueries": true,
     "phoneNumberColumn": "phone_number"
@@ -27,7 +27,7 @@
     "enabled": true,
     "sentryEnabled": true
   },
-  "apps": ["pefcl"],
+  "apps": ["pefcl", "nrp_skills"],
   "voiceMessage": {
     "enabled": false,
     "authorizationHeader": "PE-Secret",
